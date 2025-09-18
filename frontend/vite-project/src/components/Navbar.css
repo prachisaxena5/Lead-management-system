@@ -1,0 +1,99 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem; /* Increased padding for a more spacious feel */
+  background: linear-gradient(90deg, #1e3a8a, #007bff); /* A beautiful gradient background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* A more pronounced shadow */
+  font-family: 'Poppins', sans-serif; /* A more modern font */
+  border-bottom: 3px solid #f9fafb; /* A subtle white border at the bottom */
+}
+
+/* Navbar Brand & Logo */
+.navbar-brand .brand-link {
+  text-decoration: none;
+  color: #fff; /* White color for brand name to stand out */
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand .brand-link:hover {
+  transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+.logo-text {
+  background: linear-gradient(45deg, #fff, #b3d9ff); /* Gradient text for the brand */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Links Container */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* More space between links */
+}
+
+/* Individual Navigation Links */
+.nav-link {
+  color: #f0f4f8; /* Off-white color for good contrast */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+  transform: translateY(-3px); /* A more noticeable lift */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover for depth */
+}
+
+/* The 'underline' effect is replaced with a background highlight for a cleaner look */
+
+/* Logout Button */
+.nav-button {
+  background-color: #fff; /* White button to contrast the background */
+  border: none;
+  padding: 12px 25px; /* More padding for a bolder button */
+  color: #1e3a8a; /* Dark blue text color from the gradient start */
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+  background-color: #f0f4f8; /* Slightly darker shade on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 15px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link, .nav-button {
+    width: 100%; /* Make links and button full-width for better tapping */
+    text-align: center;
+  }
+}
