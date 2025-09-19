@@ -7,8 +7,8 @@ You can test the live application here.
 
 **Component	Live Link**
 ```bash
-Frontend	[Your Frontend URL]
-Backend	[Your Backend API URL]
+Frontend url - https://lead-management-sys-git-e11197-prachi-saxenas-projects-8b0ba808.vercel.app/
+Backend url -	https://lead-management-system-uttk.onrender.com
 ```
 
 
